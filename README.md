@@ -1,35 +1,21 @@
 # rhl-squid
 
-FIXME: description
+Move events from meetup.com to other mediums.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Download from https://github.com/rogue-hack-lab/rhl-squid.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar rhl-squid-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
+    rhl-squid$ source credentials.sh   #  credentials come from environment variables
+    rhl-squid$ ed squid.edn            #  configuration is edn
+    rhl-squid$ lein run squid.edn
 
 ### Bugs
 
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Does not actually exist yet.
 
 ## License
-
-Copyright © 2013 FIXME
 
 Distributed under the Eclipse Public License, the same as Clojure.
