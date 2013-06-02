@@ -15,7 +15,3 @@ Download from https://github.com/rogue-hack-lab/rhl-squid.
 ### Bugs
 
 Does not actually exist yet.
-
-## License
-
-Distributed under the Eclipse Public License, the same as Clojure.
