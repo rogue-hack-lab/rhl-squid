@@ -5,4 +5,4 @@
 (deftentacle :log
   {:validate-config (constantly true)
    :validate-env (constantly true)
-   :put-event (fn [config event] (pprint event))})
+   :put-event (fn [config-map event] (pprint event))})

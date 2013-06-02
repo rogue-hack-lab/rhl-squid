@@ -36,7 +36,7 @@
     ((:validate-env tentacle))))
 
 (defn omnomnom
-  [config]
-  (doseq [event (map #((:get-events %) config) (vals @active-brain))]
+  [config-map]
+  (doseq [event (map #((:get-events %) config-map) (vals @active-brain))]
     (doseq [tentacle (vals @active-tentacles)]
-      ((:put-event tentacle) config event))))
+      ((:put-event tentacle) config-map event))))

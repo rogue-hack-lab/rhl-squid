@@ -10,12 +10,12 @@
   [& args]
   (if-let [config-path (first args)]
     (do
-      (let [config (edn/read-string (slurp config-path))]
+      (let [config-map (edn/read-string (slurp config-path))]
         (config/with-polite-exit
-          (squid/validate-config config))
+          (squid/validate-config config-map))
         (env/with-polite-exit
           (squid/validate-env))
-        (squid/omnomnom config)))
+        (squid/omnomnom config-map)))
     (do
       (println "Usage: lein run <squid.edn>")
       (System/exit 1))))
