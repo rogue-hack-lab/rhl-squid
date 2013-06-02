@@ -1,1 +1,3 @@
-{:meetup-group-urlname "Rogue-Hack-Lab"}
+{:meetup-group-urlname "Rogue-Hack-Lab"
+ :brain :meetup
+ :tentacles #{:log}}
